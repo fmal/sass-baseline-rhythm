@@ -1,0 +1,13 @@
+@function br__get-rootsize(
+    $key,
+    $rootsizes: $br__rootsizes
+) {
+    @each $item in $rootsizes {
+        $index: index($item, $key);
+        @if $index {
+            $return: if($index == 1, 2, $index);
+            @return nth($item, $return);
+        }
+    }
+    @return false;
+}

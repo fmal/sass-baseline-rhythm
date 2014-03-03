@@ -1,0 +1,4 @@
+*.DS_Store
+*.sublime-*
+.sass-cache
+notes.md

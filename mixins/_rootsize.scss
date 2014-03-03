@@ -1,0 +1,8 @@
+@mixin br__rootsize(
+    $rootsize: br__get-rootsize-key(1)
+) {
+    $rootsizes-list: br__remove-dups($br__rootsizes);
+    $rootsize-val: br__get-rootsize($rootsize, $rootsizes-list);
+
+    font-size: #{$rootsize-val / 16 * 100%};
+}

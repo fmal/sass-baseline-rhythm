@@ -1,0 +1,9 @@
+@function br__get-rootsize-key(
+    $index,
+    $rootsizes: $br__rootsizes
+) {
+    $item: nth($rootsizes, $index);
+    $key: nth($item, 1);
+
+    @return $key;
+}

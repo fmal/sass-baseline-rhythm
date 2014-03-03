@@ -1,0 +1,14 @@
+{
+  "name": "sass-baseline-rhythm",
+  "version": "0.0.1",
+  "authors": [
+    "Filip Malinowski <crimhead@gmail.com>"
+  ],
+  "ignore": [
+    ".gitignore",
+    "bower.json",
+    "**/*.md"
+  ],
+  "description": "Sass mixins for creating a harmonious vertical rhythm",
+  "main": "_baseline-rhythm.scss"
+}
