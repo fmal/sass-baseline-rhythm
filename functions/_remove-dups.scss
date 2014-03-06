@@ -4,7 +4,7 @@
     @each $item in $list {
         @if not index($result, $item) {
             @if length($item) > 1 and $recursive {
-                $result: append($result, remove-duplicates($item, $recursive));
+                $result: append($result, br__remove-dups($item, $recursive));
             } @else {
                 $result: append($result, $item);
             }
